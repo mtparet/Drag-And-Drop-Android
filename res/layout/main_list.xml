@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  android:id="@+id/relativeLayout1">
+          <exp.mtparet.dragdrop.view.ListViewDragDrop android:id="@+id/listView1" android:layout_height="fill_parent" android:layout_width="150dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"/>
+    <exp.mtparet.dragdrop.view.ListViewDragDrop android:id="@+id/listView2" android:layout_height="fill_parent" android:layout_width="150dp" android:layout_toRightOf="@id/listView1"/>
+  <ImageView android:layout_height="100dp" android:layout_width="100dp" android:id="@+id/imageView1" android:visibility="gone" ></ImageView>
+</RelativeLayout>

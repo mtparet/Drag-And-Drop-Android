@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  android:id="@+id/relativeLayout1">
+    <Button android:layout_width="wrap_content" android:id="@+id/button1" android:text="2 ListView" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:onClick="myHandler"></Button>
+        <Button android:layout_width="wrap_content" android:text="2 ListView advanced" android:layout_below="@+id/button1" android:id="@+id/button3" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:onClick="myHandler"></Button>
+    <Button android:layout_width="wrap_content" android:text="Custom horizontal ListView" android:layout_below="@+id/button3" android:id="@+id/button2" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:onClick="myHandler"></Button>
+	
+</RelativeLayout>
