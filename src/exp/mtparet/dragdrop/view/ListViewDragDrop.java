@@ -1,3 +1,22 @@
+/*
+*Copyright 2011 Matthieu Paret
+*
+*This file is part of DragAndDrop.
+*
+*DragAndDrop is free software: you can redistribute it and/or modify
+*it under the terms of the GNU Lesser General Public License as published by
+*the Free Software Foundation, either version 3 of the License, or
+*(at your option) any later version.
+*
+*DragAndDrop is distributed in the hope that it will be useful,
+*but WITHOUT ANY WARRANTY; without even the implied warranty of
+*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*GNU General Public License for more details.
+*
+*You should have received a copy of the GNU Lesser General Public License
+*along with DragAndDrop.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 package exp.mtparet.dragdrop.view;
 
 import android.content.Context;
@@ -204,7 +223,7 @@ public class ListViewDragDrop extends ListView{
 
 			if(!isMove){
 
-				if( Math.abs(xNow -xInit) > 0 && Math.abs(yNow - yInit) < 2){
+				if( Math.abs(xNow -xInit) > 0 && Math.abs(yNow - yInit) < 4){
 
 					if(mOnItemMoveListener != null){
 						mOnItemMoveListener.onTouch(ListViewDragDrop.this, event);
