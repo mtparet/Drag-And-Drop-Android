@@ -67,11 +67,30 @@ public class DragAndDropListView extends Activity{
 		lvPicture.setAdapter(itemAdapter);
 		lvRecever.setAdapter(receverAdapter);
 		
+		/**
+		 * Set selected Listener to know what item must be drag
+		 */
 		lvPicture.setOnItemSelectedListener(mOnItemSelectedListener);
+		
+		/**
+		 * Set an touch listener to know what is the position when item are move out of the listview
+		 */
 		lvPicture.setOnItemMoveListener(mOnItemMoveListener);
+		
+		/**
+		 * Listener to know if the item is droped out of this origin ListView
+		 */
 		lvPicture.setOnItemUpOutListener(mOnItemUpOutListener);
 		
+		
+		/**
+		 * Listener to know on what position the new item must be insert
+		 */
 		lvRecever.setOnItemReceiverListener(listenerReceivePicture);
+		
+		/**
+		 * An listemer to remove an item
+		 */
 		lvRecever.setOnItemLongClickListener(listenerRemoveItem);
 		
 		setContentView(mainRelativeLayout);
