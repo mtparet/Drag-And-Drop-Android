@@ -29,12 +29,6 @@ public class DragAndDropChoice extends Activity{
             startActivity(intent2);
             
     		break;
-    	case R.id.button3:
-    		Intent intent3 = new Intent(DragAndDropChoice.this, DragAndDropListViewAdvanced.class);
-            
-            startActivity(intent3);
-            
-    		break;
     	}
     }
 }
